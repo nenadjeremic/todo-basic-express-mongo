@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "3de7126b-13c3-45d3-a1eb-351580a8855f",
+		"name": "todo-basic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "todo-item",
+			"item": [
+				{
+					"name": "todo-item - PUT",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"Test 1 - 1\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/todo-item/5ddf7a4ec5414b25c7c1b450",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"todo-item",
+								"5ddf7a4ec5414b25c7c1b450"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "todo-item - DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"a3\",\n\t\"content\": \"b3\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/todo-item/5ddf7b13c5414b25c7c1b451",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"todo-item",
+								"5ddf7b13c5414b25c7c1b451"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "todo-item - GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/todo-item",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"todo-item"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "todo-item - GET - one",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/todo-item/5ddea452f2f62320c09db2e5",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"todo-item",
+								"5ddea452f2f62320c09db2e5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "todo-item - POST",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"Test 1\"\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/todo-item",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"todo-item"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
